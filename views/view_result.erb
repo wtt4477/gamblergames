@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>home page</title>
+    <link rel="stylesheet" type="text/css" href="link.css"/>
+  </head>
+  <body>
+
+<div style="width:1000px;height:1000px;border:solid 2px blue;">
+
+  <div class="header-top" style="background-color:#A9A9A9; width:1000px;height:120px;">
+  <h1 align="center" style="color:black;">Gambling Site</h1>
+  </div>
+
+  <div class ="container" style="border:solid 2px blue; width:200px;height:230px;float:right;margin-right:100px;margin-top:20px">
+    <form action="/home" method='post'>
+      <br>
+      total win <input type='text' id='totalwin' name='totalwin'></input><br>
+      <br>
+      total loss <input "type='text' id="totalloss" name='totalloss'></input>
+      <br>
+      <br>
+      total profit <input "type='text' id="totalprofit" name='totalprofit'></input>
+      <br>
+      <br>
+    </form>
+  </div>
+
+  <div class ="container" style="background-color:#FFFFFF; width:600px;height:300px;">
+  <br>
+  <h2> place your bet on dice number (1 to 6)</h2>
+    <form action="/home" method='post'>
+      bet money <input type='text' id='stake' name='stake'></input><br>
+      <br>
+      <br>
+      on <input style="margin-left:50px; "type='text' id='number' name='number'></input>
+      <br>
+      <br>
+      <input style="margin-left:165px;" type='submit' name='bet' value="bet"></input>
+    </form>
+  </div>
+  <div class ="container" style="background-color:#FFFFFF; width:1000px;height:500px;">
+  <h2>account</h2>
+  <div class ="container" style="border:solid 2px blue; width:800px;height:250px;float:left;margin-left:20px;margin-top:20px">
+
+    <form action="/home" method='post'>
+      <br>
+      <h3>total win&emsp;&emsp;&emsp;&emsp;total loss &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;total profit</h3>
+      <h3><%= @gambler_new.totalwin %>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <%= @gambler_new.totalloss %>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <%= @gambler_new.totalprofit %><h3>
+      <br>
+      <br>
+      <br>
+      <br>
+    </form>
+    <form action="/logout" method='post'>
+      <input style="margin-left:5px;" type='submit' name='logout' value="Logout"></input>
+    </form>
+  </div>
+  
+</div>
+      </body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    background-color:#ffffff;
+}
+
+input{
+	border: 1px solid #0000ff;
+    height:25px;
+}
+
+.header-top h1{
+
+    list-style:none;
+
+    margin: 0;
+
+    padding: 20px;
+
+    color: red;
+
+    opacity: 0.5;
+
+    overflow: hidden;
+
+    width: 100%;
+
+}
+
+h2{
+	margin: 1;
+	padding: 20px;
+}
+
+.container form {
+  
+ margin-left:20px; 
+}
